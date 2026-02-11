@@ -1,6 +1,6 @@
 #include <iostream>
 
-// Include your class headers here.  Please use PascalCase for naming.
+//  Include your class headers here.  Please use PascalCase for naming.
 
 using namespace std;
 
