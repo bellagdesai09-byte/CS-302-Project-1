@@ -1,5 +1,5 @@
 Cargo.cpp
-#include CARGO_H
+#include "Cargo.h"
 Cargo::Cargo(){
 type = "none";
 weight = 0.0;
@@ -19,5 +19,3 @@ string Cargo::getType() const{
 double Cargo::getWeight() const{
     return weight;
 };
-};
-#endif

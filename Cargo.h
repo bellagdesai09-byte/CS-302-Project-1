@@ -3,6 +3,7 @@ Cargo.h
 #ifndef CARGO_H
 #define CARGO_H
 #include <string>
+#include <iostream>
 using namespace std;
 class Cargo {
 private:

@@ -1,0 +1,21 @@
+Person.h
+#include "Person.h"
+#ifndef PERSON_H
+#define PERSON_H
+#include <iostream>
+using namespace std;
+
+class Person{
+private:
+ string name;
+ double height;
+public:
+Person();
+Person(string, double);
+Person(Person&rhs);
+
+string getName() const;
+double getHeight() const;
+bool operator<(const Person& other) const;
+};
+#endif
