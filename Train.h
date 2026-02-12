@@ -1,14 +1,27 @@
 Train.h
-#include TRANSPORTER_H
 #ifndef TRAIN_H
 #define TRAIN_H
+#include "Transporter.h"
+#include "Cargo.h"
 #include <string>
-class Train {
+using namespace std;
+class Train : public Transporter<Cargo> {
 private:
-string type;
-double weight;
+string name;
+int maxCapacity;
+int trainCount;
+Cargo* items;
 public:
 Train();
 Train(string, int);
 Train(Train&rhs);
-}
+~Train();
+void load(const Cargo& item) override;
+void unload() override;
+void move() override;
+bool isEmpty() const override;
+int getCount() const override;
+
+double getTotalWeight() const;
+};
+#endif
