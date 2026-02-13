@@ -1,5 +1,4 @@
-Person.cpp
-#include PERSON_H
+#include "Person.h"
 
 Person::Person(){
  name = "none";
@@ -13,6 +12,13 @@ Person::Person(const Person &rhs)
 {
     name = rhs.name;
     height= rhs.height;
+}
+Person& Person::operator=(const Person& rhs) {
+    if (this != &rhs) { 
+        this->name = rhs.name;
+        this->height = rhs.height;
+    }
+    return *this;
 }
 string Person::getName() const{
     return name;

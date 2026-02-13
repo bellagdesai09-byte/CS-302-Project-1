@@ -1,4 +1,3 @@
-Person.h
 #ifndef PERSON_H
 #define PERSON_H
 #include <iostream>
@@ -12,6 +11,7 @@ public:
 Person();
 Person(string, double);
 Person(const Person& rhs);
+Person& operator=(const Person& rhs);
 
 string getName() const;
 double getHeight() const;

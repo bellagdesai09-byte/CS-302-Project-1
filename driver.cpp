@@ -19,7 +19,7 @@ int main()
     cout << "Creating train..." << endl;
 
     // Create a train.
-Train myTrain("Sierra Express", 10);
+    Train myTrain("Sierra Express", 10);
 
     // The train should be empty when first created.
     // Demonstrate this by outputting:
@@ -53,7 +53,7 @@ Train myTrain("Sierra Express", 10);
     // Display the number of cargo items on the train.
     // Also display whether the train is empty.
     cout << "Items on train: " << myTrain.getCount() << endl;
-    cout << "Is train empty now? " << (myTrain.isEmpty() ? "No" : "Yes") << endl;
+    cout << "Is train empty now? " << (myTrain.isEmpty() ? "Yes" : "No") << endl;
 
 
     // Output train-specific functionality.
