@@ -12,7 +12,7 @@ double weight;
 public:
 Cargo();
 Cargo(string, int);
-Cargo(Train&rhs);
+Cargo(Cargo& rhs);
 
 string getType() const;
 double getWeight() const;

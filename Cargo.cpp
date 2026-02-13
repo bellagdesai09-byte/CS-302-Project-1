@@ -8,7 +8,7 @@ Cargo::Cargo(string t, int w){
 type = t;
 weight = w;
 }
-Cargo::Cargo(Train&rhs){
+Cargo::Cargo(const Cargo& rhs){
 type = rhs.type;
 weight = rhs.weight;
 }

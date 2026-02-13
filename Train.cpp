@@ -1,5 +1,5 @@
 Train.cpp
-
+using namespace std;
 Train::Train(){
 name = "default";
 maxCapacity = 10;
@@ -33,8 +33,9 @@ void Train::load(const Cargo& item){
     }
     }
 void Train::unload(){
-    trainCount = 0;
-}
+   if (trainCount> 0) {
+        trainCount--;
+   } }
 void Train::move(){
     cout << "The train is moving to the next station..."<< endl;
 }
@@ -45,7 +46,7 @@ int Train::getCount() const{
     return trainCount;
 }
 
-double getTotalWeight() const{
+double Train::getTotalWeight() const{
     double total = 0.0;
     for (int i=0; i < trainCount; i++){
         total += items[i].getWeight();

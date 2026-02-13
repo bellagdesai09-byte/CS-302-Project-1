@@ -9,7 +9,7 @@ Person::Person(string n, double h){
     name = n;
     height = h;
 }
-Person::Person(Person&rhs)
+Person::Person(const Person &rhs)
 {
     name = rhs.name;
     height= rhs.height;
